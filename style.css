@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+body{
+    background-color: #61b1e9;
+}
+.container-main{
+    display: flex;
+    margin: 50px 0;
+    box-shadow: 0 0 10px -1px black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+.left-container{
+    background-color: #363c48;
+    color: #fff;
+    width: 250px;
+}
+.right-container{
+    width: calc(100% - 250px);
+    padding: 15px;
+}
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: initial;
+}
+.occupation {
+    margin-bottom: 20px;
+}
+.picture img {
+    width: 100%;
+}
+.left-container .ls-title{
+    background-color: #252a30;
+    padding: 8px 0;
+}
+.pi-item {
+    margin-bottom: 15px;
+}
+.ps-title {
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.website .ps-body a {
+    color: inherit;
+    text-decoration: none;
+}
+.lang-item{
+    padding-bottom: 10px;
+}
+
+.description {
+    text-align: justify;
+}
+.rsc-item {
+    margin-bottom: 15px;
+}
+.rs-title {
+    padding: 5px;
+    border-bottom: 1px solid #c1c1c1;
+    border-top: 1px solid #c1c1c1;
+}
+.rs-body {
+    padding-top: 10px;
+}
+.pe-item, .formation-item, .form-cert-item, .compt, .hob {
+    display: flex;
+    margin-bottom: 15px;
+}
+.pe-date, .fi-date, .fci-date, .compt-date, .hob-date {
+    width: 80px;
+}
+.pe-content, .fi-content, .fci-content, .compt-content, .hob-content {
+    width: calc(100% - 80px);
+}
+.pe-occ {
+    font-weight: 900;
+}
+.pe-enterprise {
+    padding: 5px 0;
+}
+.fi-title {
+    font-weight: bold;
+}    
+.informatique-competence .ls-body p, .compt-content p{
+    margin-bottom: 10px;
+}
+.left-container .ls-title h3{
+    padding: 0 10px;
+}
+
+.left-container .ls-body{
+    padding: 20px;
+}
+progress {
+    color: white;
+    background: crimson;
+    height: 8px;
+    width: 100%;
+}
+progress::-webkit-progress-value {
+    background: white;
+}
+
+progress::-moz-progress-bar {
+    background: #fff;
+}
+.list-user{
+    padding-left: 16px;
+}
+.list-user ul{
+    list-style-type: disclosure-closed;
+}
+.list-user ul li{
+    line-height: 26px;
+}
+.picture{
+    text-align: center;
+}
+.picture img{
+    width: 50%;
+}
+.left-container {
+    background-color: #213358;
+}
+.left-container .ls-title {
+    background-color: #111b30;
+}
+.pe-occ, .fi-title, .rs-title{
+    color: #213358;
+}
+@media (max-width: 768px) {
+    .container-main{
+        flex-direction: column;
+        box-shadow: 0 0 10px -1px black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left-container, .right-container{
+        width: 100%;
+    }
+}
